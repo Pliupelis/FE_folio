@@ -1,4 +1,24 @@
 .nav__wrapper {
-  height: 30px;
-  width: 100%;
+  * {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+  }
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 150px;
+  height: 80px;
+  color: White;
+  a {
+    padding-left: 1rem;
+    &:hover {
+      color: rgb(160, 149, 149);
+    }
+    &:active {
+      text-decoration: italic;
+    }
+  }
 }

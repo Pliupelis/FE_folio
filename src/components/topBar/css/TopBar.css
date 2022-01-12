@@ -4,16 +4,32 @@
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   grid-gap: 5px;
-  height: 15vh;
   width: 100%;
+  max-height: 20vh;
 }
 
 .header__container-text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-column: 7;
   -ms-grid-column-span: 3;
   grid-column: 7 / span 3;
   padding: 1rem;
+  max-width: 400px;
   border-left: 1px solid white;
+  letter-spacing: 1px;
+}
+
+.header__container-text1 p {
+  font-size: 1.2rem;
+}
+
+.header__container-text1 p small {
+  padding-right: 10px;
 }
 
 .header__container-text2 {
@@ -22,5 +38,22 @@
   grid-column: 10 / span 3;
   padding: 1rem;
   border-left: 1px solid white;
+}
+
+.header__container-text2__main {
+  padding: 1rem 0;
+}
+
+.header__container-text2__main small {
+  font-size: 1rem;
+}
+
+.header__container-text2 p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 /*# sourceMappingURL=TopBar.css.map */

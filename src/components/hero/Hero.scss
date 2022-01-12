@@ -1,19 +1,30 @@
+@mixin lhCrop($line-height) {
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}
+
 .hero {
+  width: 100%;
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    width: 100%;
-
     &-top {
-      background-color: black;
+      width: 100%;
+      flex: 1;
+      text-align: center;
       h1 {
-        padding-left: 5rem;
-        font-size: 20rem;
-        line-height: 18rem;
-        white-space: nowrap;
+        // padding-left: 5rem;
+        @include lhCrop(1);
+        font-size: 20vw;
+        line-height: 1;
+        letter-spacing: 10px;
       }
     }
     &-bottom {
@@ -21,26 +32,40 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      height: 50%;
+      flex: 1;
+      width: 100%;
       &__left {
         h1 {
           padding: 0 10rem;
-          font-size: 20rem;
+          font-size: 20vw;
+          line-height: 0.8;
+          // letter-spacing: 10px;
+          @include lhCrop(1);
         }
       }
       &__right {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         max-width: 350px;
+        margin-right: 10rem;
         height: 100%;
-        padding: 2rem;
+        &-stack {
+          p {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+          }
+          small {
+            padding-right: 10px;
+          }
+        }
         &-scroll {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: center;
-          padding-left: 5rem;
+          align-items: flex-end;
+          padding-top: 5rem;
+          margin-top: 5rem;
+          &__infinite {
+            padding-right: 1rem;
+          }
         }
       }
     }

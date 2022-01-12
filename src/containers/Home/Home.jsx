@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <TopBar />
       <Main />
-      <Featured />
+      {/* <Featured /> */}
     </>
   );
 };

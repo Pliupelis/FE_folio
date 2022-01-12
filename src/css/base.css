@@ -6,11 +6,16 @@
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Bebas Neue", cursive;
-  font-weight: 300;
 }
 
 body {
   background: #1a1a1a;
-  color: white;
+  min-height: 100vh;
+  min-width: 100vh;
+  color: #ccc3c3;
+}
+
+span:hover {
+  color: #a09595;
 }
 /*# sourceMappingURL=base.css.map */

@@ -11,10 +11,15 @@ $bg: #1a1a1a;
   margin: 0;
   scroll-behavior: smooth;
   font-family: $lightTxt;
-  font-weight: 300;
 }
 
 body {
   background: $bg;
-  color: white;
+  min-height: 100vh;
+  min-width: 100vh;
+  color: rgb(204, 195, 195);
+}
+
+span:hover {
+  color: rgb(160, 149, 149);
 }

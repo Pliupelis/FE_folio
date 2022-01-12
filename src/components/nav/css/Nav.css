@@ -1,5 +1,35 @@
 .nav__wrapper {
-  height: 30px;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 150px;
+  height: 80px;
+  color: White;
+}
+
+.nav__wrapper * {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.nav__wrapper a {
+  padding-left: 1rem;
+}
+
+.nav__wrapper a:hover {
+  color: #a09595;
+}
+
+.nav__wrapper a:active {
+  -webkit-text-decoration: italic;
+          text-decoration: italic;
 }
 /*# sourceMappingURL=Nav.css.map */

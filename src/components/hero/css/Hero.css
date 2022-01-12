@@ -1,3 +1,7 @@
+.hero {
+  width: 100%;
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,19 +16,28 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
-  width: 100%;
 }
 
 .hero__container-top {
-  background-color: black;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
 }
 
 .hero__container-top h1 {
-  padding-left: 5rem;
-  font-size: 20rem;
-  line-height: 18rem;
-  white-space: nowrap;
+  font-size: 20vw;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+
+.hero__container-top h1::before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc((1 - 1) * 0.5em);
 }
 
 .hero__container-bottom {
@@ -40,28 +53,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
 .hero__container-bottom__left h1 {
   padding: 0 10rem;
-  font-size: 20rem;
+  font-size: 20vw;
+  line-height: 0.8;
+}
+
+.hero__container-bottom__left h1::before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  margin-top: calc((1 - 1) * 0.5em);
 }
 
 .hero__container-bottom__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   max-width: 350px;
+  margin-right: 10rem;
   height: 100%;
-  padding: 2rem;
+}
+
+.hero__container-bottom__right-stack p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.hero__container-bottom__right-stack small {
+  padding-right: 10px;
 }
 
 .hero__container-bottom__right-scroll {
@@ -75,9 +99,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 5rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+.hero__container-bottom__right-scroll__infinite {
+  padding-right: 1rem;
 }
 /*# sourceMappingURL=Hero.css.map */
