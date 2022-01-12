@@ -1,0 +1,26 @@
+.header__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px;
+  height: 15vh;
+  width: 100%;
+}
+
+.header__container-text1 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 3;
+  grid-column: 7 / span 3;
+  padding: 1rem;
+  border-left: 1px solid white;
+}
+
+.header__container-text2 {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 3;
+  grid-column: 10 / span 3;
+  padding: 1rem;
+  border-left: 1px solid white;
+}
+/*# sourceMappingURL=TopBar.css.map */
